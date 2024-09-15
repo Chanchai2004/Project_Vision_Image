@@ -1,7 +1,7 @@
 #read color from img (not rgb in code bgr)
 
 import cv2
-img = cv2.imread("color.png")
+img = cv2.imread("img/color.png")
 
 def clickPosition(event, x, y, flags, param):
     if event == cv2.EVENT_LBUTTONDOWN:

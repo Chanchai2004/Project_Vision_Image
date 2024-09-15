@@ -2,7 +2,7 @@
 import cv2
 import numpy
 
-imginput = cv2.imread("color.png")
+imginput = cv2.imread("img/color.png")
 img =cv2.resize(imginput,(400,400))
 def clickPosition(event, x, y, flags, param):
     if event == cv2.EVENT_LBUTTONDOWN:

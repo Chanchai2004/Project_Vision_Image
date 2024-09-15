@@ -1,6 +1,6 @@
 #position in image 
 import cv2
-img = cv2.imread("duit.jpg")
+img = cv2.imread("img/duit.jpg")
 
 def clickPosition(event, x, y, flags, param):
     if event == cv2.EVENT_LBUTTONDOWN:

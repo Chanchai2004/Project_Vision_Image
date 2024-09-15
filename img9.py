@@ -1,7 +1,7 @@
 # Draw line between two points on image by clicking on the image
 
 import cv2
-img1 = cv2.imread("color.png")
+img1 = cv2.imread("img/color.png")
 img =cv2.resize(img1,(400,400))
 
 point =[]
