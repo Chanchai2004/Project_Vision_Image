@@ -1,3 +1,4 @@
+#resize image
 import cv2
 
 img = cv2.imread('duit.jpg', 1)
