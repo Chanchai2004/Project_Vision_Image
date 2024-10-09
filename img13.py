@@ -14,9 +14,10 @@ while (cap.isOpened()):
 
     if check == True:
         gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-        face_detect = face_cascade.detectMultiScale(gray_frame, scaleFactor=1.05, minNeighbors=3)
-        eye_detectd = eye_cascade.detectMultiScale(gray_frame, scaleFactor=1.05, minNeighbors=3)
-        for (x,y,w,h) in face_detect:ำำำำ
+        face_detect = face_cascade.detectMultiScale(gray_frame, scaleFactor=1.1, minNeighbors=5)
+        eye_detectd = eye_cascade.detectMultiScale(gray_frame, scaleFactor=1.1, minNeighbors=5)
+        for (x,y,w,h) in face_detect:
+            cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), thickness=5)
             for (ex, ey, ew, eh) in eye_detectd:
                 cv2.rectangle(frame, (ex, ey), (ex+ew, ey+eh), (255, 0, 0), thickness=5)
            
